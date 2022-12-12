@@ -1,4 +1,4 @@
-module github.com/gen2brain/beeep
+module github.com/LightningDev1/beeep
 
 go 1.14
 
