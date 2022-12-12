@@ -5,9 +5,9 @@ func ExampleBeep() {
 }
 
 func ExampleNotify() {
-	Notify("Title", "MessageBody", "assets/information.png")
+	Notify("Title", "MessageBody", "beeep", "assets/information.png")
 }
 
 func ExampleAlert() {
-	Alert("Title", "MessageBody", "assets/warning.png")
+	Alert("Title", "MessageBody", "beeep", "assets/warning.png")
 }
