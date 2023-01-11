@@ -45,7 +45,7 @@ func Notify(title, message, appID, appIcon string) error {
 		return toastNotify(title, message, appID, appIcon)
 	}
 
-	err := baloonNotify(title, message, appID, appIcon, false)
+	err := baloonNotify(title, message, appIcon, false)
 	if err != nil {
 		e := msgNotify(title, message)
 		if e != nil {
@@ -67,7 +67,7 @@ func msgNotify(title, message string) error {
 	return cmd.Run()
 }
 
-func baloonNotify(title, message, appID, appIcon string, bigIcon bool) error {
+func baloonNotify(title, message, appIcon string, bigIcon bool) error {
 	tray, err := systray.New()
 	if err != nil {
 		return err
